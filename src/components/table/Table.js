@@ -71,7 +71,7 @@ function Table(props) {
               <input type="text" placeholder="Search" onChange={changeHandler} className="input-field"/>
               <i className="icon fa fa-search"></i>
             </span>
-            <div className="button b2" id="button-10">
+            <div className="button">
               <input type="checkbox" className="checkbox" onChange={toggleTableLayout}/>
               <div className="knobs">
                 <span>Limit Offset</span>
