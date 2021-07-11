@@ -1,0 +1,66 @@
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+   
+.box {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #999;
+    overflow: auto;
+}
+
+.side-space {
+    padding: 20px;
+}
+
+.box h4 {
+    box-shadow: 0 2px 10px 5px rgba(214, 202, 202, 0.3);
+    margin: 0;
+}
+.box label {
+    width: 100%;
+    display: block;
+}
+
+.box input[type=text] {
+    width: 100%;
+    background-color: #dfd5d5;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+    line-height: 30px;
+    border-radius: 2px;
+    border: none;
+}
+
+.box .actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions button {
+    padding: 5px;
+    border-radius: 2px; 
+    border: 1px solid #e7cece;
+}
+
+.actions .cancel-btn {
+    background-color: #fff;
+    color: #000000;
+    margin-right: 5px;
+}
+
+.actions .update-btn {
+    background-color: #3750dd;
+    color: #fff;
+}

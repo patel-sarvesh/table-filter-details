@@ -1,0 +1,170 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container .table-sec {
+    margin-top: 8%;
+    width: 85%;
+    box-shadow: 0px 5px 5px 5px rgba(214, 202, 202, 0.5);
+}
+
+.table-sec .table-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.table-header .title {
+    flex: 0 0 50%;
+    text-align: left;
+    line-height: 29px;
+}
+
+.table-header .table-filter {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-filter .search {
+    position: relative;
+    margin-right: 10px;
+}
+  
+.icon {
+    color: #ced2ce;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+  
+.input-field {
+    padding: 8px;
+    border: none;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table thead {
+    background-color: #ced2ce;
+    color: grey;
+}
+
+table thead tr {
+    line-height: 35px;
+}
+
+table tbody tr {
+    line-height: 45px;
+    border-bottom: 1px solid #ede1e1;
+    cursor: pointer;
+}
+
+td {
+    padding: 0 15px;
+}
+
+td progress {
+    width: 5em;
+    height: 0.5em;
+    vertical-align: baseline;
+    margin-right: 5px;
+}
+
+.pagination-sec {
+    margin: 15px 10px;
+}
+
+.knobs, .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    position: relative;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+#button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    border-radius: 20px;
+    margin-top: 3px;
+    transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+    content: '';
+    left: 4px;
+    background-color: #03A9F4;
+}
+
+#button-10 .knobs:after {
+    content: 'Infinite';
+    right: 4px;
+    color: #4e4e4e;
+}
+
+#button-10 .knobs span {
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+    color: #4e4e4e;
+}
+
+#button-10 .checkbox:checked + .knobs:before {
+    left: 48%;
+    background-color: #F44336;
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+    color: #fff;
+}
+
+#button-10 .checkbox:checked ~ .layer {
+    background-color: #fcebeb;
+}

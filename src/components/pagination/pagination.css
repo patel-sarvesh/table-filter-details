@@ -1,0 +1,33 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin-right: 5px;
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 2px;
+}
+
+.active {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.pagination label {
+    color: #7d998f;
+    font-size: 14px;
+}
+
+.pagination input {
+    background-color: aqua;
+    border: none;
+    padding: 4px;
+}
+
+.primary-btn {
+    padding: 2px 5px;
+    border-radius: 2px;
+}
