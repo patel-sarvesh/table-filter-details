@@ -17,10 +17,6 @@ function App() {
     setSelectedInvoice(null);
   }
 
-  useEffect( () => {
-    getData();
-  }, [])
-
   const getData = () => {
     axios.get('./data.csv', { responseType: 'blob',})
     .then(function (response) {
@@ -61,6 +57,10 @@ function App() {
     }
     return result;
   }
+
+  useEffect(() => {
+    getData();
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>

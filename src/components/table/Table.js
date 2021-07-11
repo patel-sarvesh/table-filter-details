@@ -12,7 +12,7 @@ function Table(props) {
 
   const changeHandler = (e) => {
     const searchTerm = e.target.value;
-    setFilterData(invoices.filter(d => d['Invoice ID'].includes(searchTerm)));
+    (searchTerm) ? setFilterData(invoices.filter(d => d['Invoice ID'].includes(searchTerm))) : changePage(1);
   }
 
   const sortHandler = (column) => {
@@ -57,7 +57,7 @@ function Table(props) {
       return;
     }
     updateTableWithLayout();
-  }, [showPagination])
+  }, [showPagination]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="table-container">
