@@ -47,8 +47,8 @@ function Table(props) {
   }
 
   const getArrow = (column) => {
-    return (sortValue[column] === 'asc') ? <i className="fa fa-arrow-up" aria-hidden="true"></i> :
-    (sortValue[column] === 'desc') ? <i className="fa fa-arrow-down" aria-hidden="true"></i> : null;
+    return (sortValue[column] === 'asc') ? <i className="fa fa-arrow-down" aria-hidden="true"></i> :
+    (sortValue[column] === 'desc') ? <i className="fa fa-arrow-up" aria-hidden="true"></i> : null;
   }
 
   const changePage = (pageNo) => {
