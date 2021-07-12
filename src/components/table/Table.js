@@ -12,7 +12,19 @@ function Table(props) {
 
   const changeHandler = (e) => {
     const searchTerm = e.target.value;
-    (searchTerm) ? setFilterData(invoices.filter(d => d['Invoice ID'].includes(searchTerm))) : changePage(1);
+    switch (true) {
+      case !!searchTerm:
+        setFilterData(invoices.filter(d => d['Invoice ID'].includes(searchTerm)));
+        break;
+      case !searchTerm && showPagination:
+        changePage(1);
+        break;
+      case !searchTerm && !showPagination:
+        setFilterData(invoices);
+        break;
+      default:
+        return;
+    }
   }
 
   const sortHandler = (column) => {
